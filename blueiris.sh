@@ -14,8 +14,7 @@ if [ ! -e "$BLUEIRIS_EXE" ] ; then
     if [ ! -e "$INSTALL_EXE" ] ; then
         wget http://blueirissoftware.com/blueiris.exe
     fi
-    wine blueiris.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
-    rm blueiris.exe
+    wine blueiris.exe
 fi
 
 wine "$BLUEIRIS_EXE"
